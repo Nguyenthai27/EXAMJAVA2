@@ -1,23 +1,23 @@
 package ExamJava2.entities;
 
 public class Student {
-    public int id;
+    public String id;
     public String name;
     public String address;
-    public int phone;
+    public String phone;
 
-    public Student(int id, String name, String address, int phone) {
+    public Student(String id, String name, String address, String phone) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.phone = phone;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -37,11 +37,11 @@ public class Student {
         this.address = address;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 }
