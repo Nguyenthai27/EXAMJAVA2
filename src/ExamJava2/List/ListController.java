@@ -1,5 +1,6 @@
 package ExamJava2.List;
 
+import ExamJava2.Add.AddController;
 import ExamJava2.Main;
 import ExamJava2.entities.Student;
 import javafx.collections.FXCollections;
@@ -31,6 +32,7 @@ public class ListController implements Initializable {
         txtName.setCellValueFactory(new PropertyValueFactory<Student, String>("name"));
         txtAddress.setCellValueFactory(new PropertyValueFactory<Student, String>("address"));
         txtPhone.setCellValueFactory(new PropertyValueFactory<Student, Integer>("phone"));
+        tdlist.setItems(AddController.listStudent);
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
