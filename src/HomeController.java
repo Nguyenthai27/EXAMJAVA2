@@ -1,10 +1,23 @@
+import ExamJava2.Add.AddController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import java.io.FileWriter;
+
 public class HomeController {
 
+    public void save(ActionEvent actionEvent) {
+        try {
+            FileWriter f = new FileWriter("student.txt");
+            f.write(AddController.listStudent.toString());
+            f.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        System.out.println("Success...");
+    }
     public void ontoList(ActionEvent actionEvent) throws Exception {
         Parent listPage = FXMLLoader.load(getClass().getResource("ExamJava2/List/liststudent.fxml"));
         Scene listScene = new Scene(listPage, 800, 600);
