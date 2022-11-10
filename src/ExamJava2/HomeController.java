@@ -33,4 +33,10 @@ public class HomeController {
         Main.rootStage.setTitle("Add Student");
         Main.rootStage.setScene(listScene);
     }
+
+    public void exit(ActionEvent actionEvent) {
+        public void exit(ActionEvent actionEvent) {
+            System.exit(0);
+        }
+    }
 }

@@ -8,7 +8,7 @@
    <children>
       <Button layoutX="120.0" layoutY="191.0" mnemonicParsing="false" onAction="#ontoList" prefHeight="131.0" prefWidth="188.0" text="List Student" />
       <Button layoutX="444.0" layoutY="184.0" mnemonicParsing="false" onAction="#ontoAdd" prefHeight="131.0" prefWidth="188.0" text="Add Student" />
-      <Button layoutX="746.0" layoutY="27.0" mnemonicParsing="false" text="Exit" />
+      <Button onAction="#exit" layoutX="746.0" layoutY="27.0" mnemonicParsing="false" text="Exit" />
       <Button layoutX="113.0" layoutY="66.0" mnemonicParsing="false" onAction="#save" text="Save" />
    </children>
 </Pane>
