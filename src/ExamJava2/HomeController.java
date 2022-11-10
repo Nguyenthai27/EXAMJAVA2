@@ -1,3 +1,5 @@
+package ExamJava2;
+
 import ExamJava2.Add.AddController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;

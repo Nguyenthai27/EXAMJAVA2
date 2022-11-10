@@ -1,6 +1,7 @@
 package ExamJava2.Add;
 
 
+import ExamJava2.Main;
 import ExamJava2.entities.Student;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -34,10 +35,10 @@ public class AddController  {
       }
    }
 
-   public void back(ActionEvent actionEvent) {
-      Parent listPage = FXMLLoader.load(getClass().getResource("ExamJava2/List/liststudent.fxml"));
+   public void back(ActionEvent actionEvent) throws Exception{
+      Parent listPage = FXMLLoader.load(getClass().getResource("../List/liststudent.fxml"));
       Scene listScene = new Scene(listPage, 800, 600);
-      Main.rootStage.setTitle("List Student");
+      ExamJava2.Main.rootStage.setTitle("List Student");
       Main.rootStage.setScene(listScene);
    }
 }
