@@ -34,7 +34,7 @@ public class ListController implements Initializable {
     }
 
     public void back(ActionEvent actionEvent) throws Exception {
-        Parent listPage = FXMLLoader.load(getClass().getResource("../Add/add.fxml"));
+        Parent listPage = FXMLLoader.load(getClass().getResource("../home.fxml"));
         Scene listScene = new Scene(listPage, 800, 600);
         ExamJava2.Main.rootStage.setTitle("List Student");
         Main.rootStage.setScene(listScene);

@@ -21,14 +21,14 @@ public class HomeController {
         System.out.println("Success...");
     }
     public void ontoList(ActionEvent actionEvent) throws Exception {
-        Parent listPage = FXMLLoader.load(getClass().getResource("ExamJava2/List/liststudent.fxml"));
+        Parent listPage = FXMLLoader.load(getClass().getResource("./list/liststudent.fxml"));
         Scene listScene = new Scene(listPage, 800, 600);
         Main.rootStage.setTitle("List Student");
         Main.rootStage.setScene(listScene);
     }
 
     public void ontoAdd(ActionEvent actionEvent) throws  Exception {
-        Parent listPage = FXMLLoader.load(getClass().getResource("ExamJava2/Add/add.fxml"));
+        Parent listPage = FXMLLoader.load(getClass().getResource("./Add/add.fxml"));
         Scene listScene = new Scene(listPage, 800, 600);
         Main.rootStage.setTitle("Add Student");
         Main.rootStage.setScene(listScene);
