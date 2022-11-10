@@ -35,8 +35,6 @@ public class HomeController {
     }
 
     public void exit(ActionEvent actionEvent) {
-        public void exit(ActionEvent actionEvent) {
             System.exit(0);
-        }
     }
 }
