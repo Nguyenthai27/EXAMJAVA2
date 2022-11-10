@@ -19,7 +19,7 @@ public class AddController  {
    public TextField txtID;
    public static ObservableList<Student> listStudent  = FXCollections.observableArrayList();
    public Text error;
-   public void addStudent(ActionEvent actionEvent) {
+   public void add(ActionEvent actionEvent) throws Exception {
 
       try{
          error.setVisible(false);

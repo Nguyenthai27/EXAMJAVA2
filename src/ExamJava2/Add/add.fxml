@@ -10,7 +10,7 @@
    <children>
       <TextField fx:id="txtName" layoutX="133.0" layoutY="129.0" />
       <TextField fx:id="txtPhone" layoutX="133.0" layoutY="277.0" />
-      <Button layoutX="649.0" layoutY="391.0" mnemonicParsing="false" text="Add" />
+      <Button onAction="#add" layoutX="649.0" layoutY="391.0" mnemonicParsing="false" text="Add" />
       <TextField fx:id="txtAddress" layoutX="525.0" layoutY="129.0" />
       <TextField fx:id="txtID" layoutX="525.0" layoutY="277.0" />
       <Text layoutX="140.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
